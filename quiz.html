@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="timer-container">
+            <div class="timer-bar"></div>
+            <span class="timer-text">10</span>
+        </div>
+        
+        <div class="question-container">
+            <h2 id="question">Question goes here</h2>
+            <div class="options-container">
+                <label class="option">
+                    <input type="radio" name="answer" value="0">
+                    <span class="radio-custom"></span>
+                    <span class="option-text">Option 1</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="1">
+                    <span class="radio-custom"></span>
+                    <span class="option-text">Option 2</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="2">
+                    <span class="radio-custom"></span>
+                    <span class="option-text">Option 3</span>
+                </label>
+                <label class="option">
+                    <input type="radio" name="answer" value="3">
+                    <span class="radio-custom"></span>
+                    <span class="option-text">Option 4</span>
+                </label>
+            </div>
+        </div>
+
+        <button id="next-btn" class="btn">Next Question</button>
+    </div>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <h2>Quiz Complete!</h2>
+            <div class="stars-container">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+            <p>Your Score: <span id="final-score">0</span>/15</p>
+            <div class="leaderboard">
+                <h3>Top 5 Scores</h3>
+                <ol id="top-scores"></ol>
+            </div>
+            <button id="retry-btn" class="btn">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

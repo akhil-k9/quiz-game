@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Start Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="quiz-container" style="text-align: center;">
+    <h1 style="margin-bottom: 20px;">Welcome to the Quiz Game!</h1>
+    <p style="margin-bottom: 30px; font-size: 18px;">
+      You'll be asked 5 random questions about <strong>Python, HTML, and CSS</strong>. <br/>
+      You have 10 seconds for each one. Are you ready?
+    </p>
+    <button class="btn" onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <script>
+    function startQuiz() {
+      window.location.href = "quiz.html"; // redirects to quiz page
+    }
+  </script>
+
+</body>
+</html>
